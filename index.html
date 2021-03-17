@@ -1,75 +1,101 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WWW</title>
-  </head>
-  <body>
-    <header>
-      <h1>World Wide Web</h1>
-      <link rel="stylesheet" href="styles.css" />
-    </header>
-    <main>
-      <p>
-        <strong>World Wide Web </strong> (WWW, také pouze zkráceně web), ve
-        volném překladu „celosvětová pavučina“, je označení pro aplikace
-        internetového protokolu HTTP. Je tím myšlena soustava propojených
-        hypertextových dokumentů. Služba se zrodila se v roce 1989 v evropském
-        vědeckém centru CERN v Ženevě díky <strong>Timu Berners-Lee</strong>.
-      </p>
-      <p>
-        Za hypertext označujeme takový text, který obsahuje propojení na jiné
-        texty pomocí tzv. hypertextových odkazů. Ve službě WWW jsou realizovány
-        jako tzv. URL odkazy. Služba je založena na spolupráci WWW klientů
-        (browserů) s WWW serverem. Prvním komerčním prohlížečem webových stránek
-        byl na počátku 90. let minulého století Mosaic.
-      </p>
-      <p>
-        Při jejich spolupráci fungují následující mechanismy:
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WWW</title>
+</head>
+
+<body>
+  <header>
+    <h1>World Wide Web</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </header>
+  <main>
+    <p>
+      <strong>World Wide Web </strong> (WWW, také pouze zkráceně web), ve
+      volném překladu „celosvětová pavučina“, je označení pro aplikace
+      internetového protokolu HTTP. Je tím myšlena soustava propojených
+      hypertextových dokumentů. Služba se zrodila se v roce 1989 v evropském
+      vědeckém centru CERN v Ženevě díky <strong>Timu Berners-Lee</strong>.
+    </p>
+    <p>
+      Za hypertext označujeme takový text, který obsahuje propojení na jiné
+      texty pomocí tzv. hypertextových odkazů. Ve službě WWW jsou realizovány
+      jako tzv. URL odkazy. Služba je založena na spolupráci WWW klientů
+      (browserů) s WWW serverem. Prvním komerčním prohlížečem webových stránek
+      byl na počátku 90. let minulého století Mosaic.
+    </p>
+    <p>
+      Při jejich spolupráci fungují následující mechanismy:
+    <ul>
+      <li>komunikační protokol HTTP, pomocí něhož WWW klient a WWW server komunikují,</li>
+      <li>jazyk HTML, definující formát WWW stránek, které server vrací klientovi</li>
+    </ul>
+    W3C je mezinárodní konsorcium jehož členové společně s veřejností vyvíjejí webové standardy pro WWW. Konsorciu
+    předsedá Tim Berners-Lee.
+    </p>
+    <section>
+      <h2>WWW-Otázky a odpovědi</h2>
+      <div class="otáaka">1. Jakou roli plní webový server? Uveďte příklady webových serverů.</div>
+      <div class="odpoved">
+        <p>
+          Server je <strong>bezobslužný program</strong>,který příjmá a obsluhuje požadavky klientů. Na
+          vlastnostech tohoto programu závisí,co server dovede a jaký má výkon.
+        <h4>Příklady webových serverů</h4>
         <ul>
-          <li>komunikační protokol HTTP, pomocí něhož WWW klient a WWW server komunikují,</li>
-          <li>jazyk HTML, definující formát WWW stránek, které server vrací klientovi</li>
+          <li>Apahe</li>
+          <li>NGINX</li>
+          <li>Microsoft Internet Information Services</li>
         </ul>
-        W3C je mezinárodní konsorcium jehož členové společně s veřejností vyvíjejí webové standardy pro WWW. Konsorciu předsedá Tim Berners-Lee.
+      </div>
+      <div class="otazka">2. Jak se nazývá program označovaný jako webový klient? Co je jeho úkolem? Vyjmenujte
+        nejpouživanější webové klienty.</div>
       </p>
-      <section>
-        <h2>WWW-Otázky a odpovědi</h2>
-        <div class="otáaka">1. Jakou roli plní webový server? Uveďte příklady webových serverů.</div>
-        <div class="odpoved">
-          <p>
-            Server je <strong>bezobslužný program</strong>,který příjmá a obsluhuje požadavky klientů. Na
-            vlastnostech tohoto programu závisí,co server dovede a jaký má výkon.
-          </p>
-          <h4>Příklady webových serverů</h4>
-          <ul>
-            <li>Apahe</li>
-            <li>NGINX</li>
-            <li>Microsoft Internet Information Services</li>
-          </ul>
-          </div>
-          <div class="otazka">2. Jak se nazývá program označovaný jako webový klient? Co je jeho úkolem? Vyjmenujte 
-           nejpouživanější webové klienty.</div>
-          <div class="odpoved">
-            <p>
-              Klient (<i>browser, prohlížeč</i>) je program, který komunikuje s uživatelem a na základě jeho pokynů se obrací na jednotlivé
-              servery, získává od nich data a zobrazuje je.
-            <h4>Příklady webových klientů</h4>
-            <ul>
-              <li>Mozilla Firefox</li>
-              <li>Opera</li>
-              <li>Safari</li>
-              <li>Google Chrome</li>
-              <li>Microsoft edge</li>
-            </ul>
-            </p>
-          </div>
-      </section>
-    </main>
-    <footer>
-      <hr />
-      <p>&copy; 2021 - IT1 Zedek</p>
-    </footer>
-  </body>
+      <div class="odpoved">
+        <p>
+          Klient (<i>browser, prohlížeč</i>) je program, který komunikuje s uživatelem a na základě jeho pokynů se
+          obrací na jednotlivé
+          servery, získává od nich data a zobrazuje je.
+        <h4>Příklady webových klientů</h4>
+        <ul>
+          <li>Mozilla Firefox</li>
+          <li>Opera</li>
+          <li>Safari</li>
+          <li>Google Chrome</li>
+          <li>Microsoft edge</li>
+        </ul>
+        </p>
+      </div>
+      <div class="otazka">3. Jak probíhá komunikace mezi webovým klientem a serverem?</div>
+      <div class="odpoved">
+        <p>Základem služby WWW je komunikace mezi webovým klientem a webovým serverem pomocí protokolu HTTP.
+           Při jejich spolupráci fungují nasledující mechanismy:
+        <ul>
+          <li>
+            Komunikační protokol HTTP,pomocí něhož WWW klient a WWW server komunikuj
+          </li>
+          <li>
+            jazyk <abbr title="HyperText Markup Language">HTML</abbr>, definujcí formát WWW stránek, které
+            server vrací klientovi
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="otazka">4. Co je HTTP?</div>
+      <div class="odpoveď">
+        <p><abbr title="HyperText Transfer Protocol">HTTP </abbr>  je jednoduchý aplikační protokol s komunikací charakteru požadavek –
+          odpověď. Žádosti mají formu jednoduchých příkazů a mohou být upřesňovány pomocí různých parametrů, tzv.<strong> hlaviček</strong>
+         </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <hr />
+    <p>&copy; 2021 - IT1 Zedek</p>
+  </footer>
+</body>
+
 </html>

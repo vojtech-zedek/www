@@ -170,14 +170,100 @@
         stránce.</div>
       <div class="odpoved">
         <p>
-          Jako cookie (anglicky koláček, oplatka, sušenka) se v protokolu HTTP označuje malé množství dat, která WWW
+          Jako <strong>cookie</strong> (anglicky koláček, oplatka, sušenka) se v protokolu HTTP označuje malé množství
+          dat, která WWW
           server pošle prohlížeči a ten je uloží na počítači uživatele. Při každé další návštěvě téhož serveru pak
           prohlížeč tato data posílá zpět serveru.Cookies běžně slouží k rozlišování jednotlivých uživatelů, ukládá se
           do nich obsah „nákupního košíku“ v elektronických obchodech, uživatelské předvolby apod
-          <figure>
-            <img src="img/WebCookieSniffer.png" alt="soubory cookies">
-            <figcaption>soubory cookies</figcaption>
-          </figure>
+        <figure>
+          <img src="img/WebCookieSniffer.png" alt="soubory cookies">
+          <figcaption>soubory cookies</figcaption>
+        </figure>
+        </p>
+      </div>
+      <div class="otazka">9. Vypište přehledně jednotlivé fáze fungování internetových vyhledávačů.</div>
+      <div class="odpoved">
+        <p>
+        <ol>
+          <li>
+            <strong>Prohledání webových stránek</strong>. Pro prohledání webových stránek má internetový vyhledávač
+            automatický program,
+            tzv. vyhledávací robot (crawler, bot, nebo též spider – „pavouk“), který prochází celý webový prostor. Robot
+            dostane na začátku seznam atraktivních vstupních míst (odkazů), jejichž obsah si přečte, uloží do databáze a
+            zapamatuje si navštívenou adresu odkazu, aby se na ni již podruhé nevracel. Z obsahu stažené stránky vybere
+            seznam všech obsažených odkazů a opět všechny odkazy navštíví. Cyklus návštěvy, sesbírání odkazů a dalších
+            návštěv se stále opakuje. Robot se na navštívené stránky vrací v pravidelných intervalech, aby zjistil, zda
+            se na stránce neobjevily nějaké nové informace. Z principu práce vyhledávače vyplývá, že nikdy nemá úplně
+            aktuální informace, ale prezentuje je se zpožděním.
+          </li>
+          <br>
+          <li>
+            <strong>Indexování</strong>. Databázi obsahující uložené obsahy navštívených stránek je potřeba indexovat,
+            aby bylo možné
+            podle zadaných slov co nejrychleji najít adresy stránek, které je obsahují. Zároveň je nutné vystavět index
+            tak, aby poskytoval na prvních místech stránky s nejvyšší užitnou hodnotou (relevancí, mající nejvyšší
+            hodnocení kvality, nejvyšší váhu). Pro výpočet relevance se používají nejrůznější algoritmy, které jsou
+            založeny na nejrůznějších znacích stránek a různých úhlech analýzy jejich obsahu:
+            <ul>
+              <br>
+              <li>
+                <strong>Váha slov</strong>. Stránka má vyšší hodnocení, když má hledané slovo na stránce vyšší váhu.
+                Váha slov se
+                zvyšuje, je-li slovo v titulku stránky, nadpisu nebo blíže k začátku stránky, případně se na stránce
+                opakuje. Váhu slov lze zneužít vkládáním atraktivních slov do obsahu stránky bez ohledu na její skutečný
+                obsah nebo prostým opakováním slov. Vyhledávač se brání penalizací (snížením kvality) podezřelých
+                stránek.
+              </li>
+              <br>
+              <li>
+                <strong>Atraktivita stránky</strong>. Stránka má vyšší hodnocení, když na ni odkazuje více jiných
+                stránek, protože zřejmě
+                obsahuje zajímavé informace. Atraktivitu lze zneužít vytvářením falešných stránek, které odkazují na
+                stránku, která má získat vyšší hodnocení. Vyhledávač se brání sledováním podezřelého náhlého hromadění
+                odkazů.
+              </li>
+              <br>
+              <li>
+                <strong>Serióznost webu</strong>. Webové servery, které obsahují velké množství kvalitních stránek, jsou
+                při výpočtu váhy
+                zvýhodněny. Seznam se může udržovat i ručními zásahy.
+              </li>
+              <br>
+              <li>
+                <strong>Sponzorované odkazy</strong>. Váha odkazu se zvyšuje zaplacením poplatku. Seriózní vyhledávače
+                se této praxi
+                vyhýbají nebo zřetelně oddělují výsledky zobrazené na základě komerčního zvýhodnění. Tento způsob je
+                jedním z možných zdrojů příjmů vyhledávače.
+              </li>
+              <br>
+              <li>
+                <strong>Technická kvalita</strong>. Váha odkazu se zvyšuje, pokud jsou stránky správně sestaveny a
+                vyhovují webovým
+                standardům.
+              </li>
+            </ul>
+            <p>
+              Někdy je nežádoucí, aby robot indexoval některé stránky. Proto existuje možnost, jak roboty omezit pomocí
+              souboru robots.txt, který se umisťuje do kořene webového serveru
+            </p>
+          </li>
+          <li>
+            <strong>Vyhledávání</strong>. Databáze a její index se zpřístupní na vstupní stránce vyhledávače. Uživatel
+            získá po zadání
+            hledaných slov seznam adres, na kterých robot hledaná slova našel. Pro vyšší přehlednost se zobrazuje kromě
+            odkazu ještě titulek stránky, a okolí nalezených slov.
+          </li>
+        </ol>
+        </p>
+      </div>
+      <div class="otazka">10. . Vysvětlete zkratku HTML a pojem hypertext</div>
+      <div class="odpoved">
+        <p>
+          <abbr title="HyperText Maruzp Language">HTML</abbr> je v informatice název značkovacího jazyka používaného pro
+          tvorbu webových stránek,
+          které jsou spojeny hypertextovými odkazy. Za hypertext označujeme takový text, který obsahuje propojení na
+          jiné texty pomocí tzv. hypertextových
+          odkazů. Ve službě WWW jsou realizovány jako tzv. URL odkazy
         </p>
       </div>
     </section>
